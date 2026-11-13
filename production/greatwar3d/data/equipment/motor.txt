@@ -1,0 +1,12 @@
+# Lorries: they move motorised infantry and towed guns, and carry supply. Format: equipment/small_arms.txt.
+truck_1907 = { name = "Lorries" cat = motor roles = { truck } tech = motor_transport slots = { engine body }
+    stats = { speed = 18 supply = 1 reliability = 0.7 cost = 1.2 } res = { oil = 0.3 iron = 0.3 } }
+truck_1925 = { name = "Pneumatic-Tyred Lorries" cat = motor roles = { truck } tech = improved_lorries slots = { engine body }
+    stats = { speed = 30 supply = 1.4 reliability = 0.8 cost = 1.3 } res = { oil = 0.3 iron = 0.3 } }
+truck_1948 = { name = "All-Terrain Trucks" cat = motor roles = { truck } tech = all_terrain_trucks slots = { engine body }
+    stats = { speed = 40 supply = 2 reliability = 0.85 cost = 1.6 } res = { oil = 0.3 iron = 0.4 } }
+truck_1966 = { name = "Modern Trucks" cat = motor roles = { truck } tech = containerisation slots = { engine body }
+    stats = { speed = 55 supply = 2.6 reliability = 0.9 cost = 1.8 } res = { oil = 0.3 iron = 0.4 } }
+truck_diesel = { name = "Diesel Engine" cat = motor slot = engine tech = diesel_engines stats = { speed = 3 reliability = 0.05 cost = 0.1 } }
+four_wheel_drive = { name = "Four-Wheel Drive" cat = motor slot = body tech = improved_lorries stats = { speed = 4 supply = 0.1 cost = 0.1 } }
+armoured_cab = { name = "Armoured Cab" cat = motor slot = body tech = half_tracks stats = { defense = 0.05 cost = 0.2 } }

@@ -1,0 +1,85 @@
+# Warships. Format: equipment/small_arms.txt. Naval stats are per ship: naval and torpedo attack, sub_attack,
+# aa, hp (the hull), armor, speed (knots), range (km), stealth (submarines), capacity (aircraft carried).
+destroyer_1906 = { name = "Torpedo-Boat Destroyers" cat = ship weight = light roles = { destroyer } year = 1900 slots = { battery torpedo engine aa special }
+    stats = { naval = 0.4 torpedo = 1.0 sub_attack = 0.2 aa = 0.02 hp = 4 speed = 28 range = 3000 reliability = 0.8 cost = 22 } res = { coal = 1 iron = 2 } }
+light_cruiser_1906 = { name = "Protected Cruisers" cat = ship weight = light roles = { cruiser } year = 1900 slots = { battery secondary armour torpedo engine aa special }
+    stats = { naval = 1.1 torpedo = 0.3 aa = 0.05 hp = 10 armor = 5 speed = 22 range = 5000 reliability = 0.8 cost = 50 } res = { coal = 2 iron = 4 } }
+armoured_cruiser_1906 = { name = "Armoured Cruisers" cat = ship weight = medium roles = { cruiser } year = 1900 slots = { battery secondary armour engine aa special }
+    stats = { naval = 1.6 hp = 18 armor = 15 speed = 21 range = 6000 reliability = 0.8 cost = 80 } res = { coal = 2 iron = 6 } }
+predreadnought = { name = "Pre-Dreadnought Battleships" cat = ship weight = heavy roles = { capital } year = 1895 slots = { battery secondary armour engine aa special }
+    stats = { naval = 2.6 hp = 32 armor = 30 speed = 17 range = 6000 reliability = 0.8 cost = 160 } res = { coal = 3 iron = 8 } }
+dreadnought_hull = { name = "Dreadnoughts" cat = ship weight = heavy roles = { capital } tech = dreadnought_design slots = { battery secondary armour engine aa special }
+    stats = { naval = 3.6 hp = 42 armor = 35 speed = 21 range = 7000 reliability = 0.82 cost = 200 } res = { coal = 3 iron = 10 } }
+battlecruiser_hull = { name = "Battlecruisers" cat = ship weight = medium roles = { capital } tech = battlecruisers slots = { battery secondary armour engine aa special }
+    stats = { naval = 3.3 hp = 34 armor = 18 speed = 27 range = 8000 reliability = 0.8 cost = 190 } res = { coal = 3 iron = 9 } }
+superdreadnought_hull = { name = "Super-Dreadnoughts" cat = ship weight = heavy roles = { capital } tech = super_dreadnoughts slots = { battery secondary armour engine aa special }
+    stats = { naval = 4.4 hp = 50 armor = 40 speed = 22 range = 8000 reliability = 0.82 cost = 230 } res = { coal = 3 iron = 11 } }
+submarine_1912 = { name = "Submarines" cat = ship weight = light roles = { submarine } tech = submarines slots = { torpedo engine special }
+    stats = { torpedo = 1.8 stealth = 30 hp = 3 speed = 14 range = 4000 reliability = 0.7 cost = 18 } res = { iron = 2 oil = 0.5 } }
+carrier_1918 = { name = "Seaplane Carriers" cat = ship weight = medium roles = { carrier } tech = naval_aviation slots = { aa engine armour special }
+    stats = { capacity = 20 hp = 30 aa = 0.4 speed = 24 range = 7000 reliability = 0.8 cost = 140 } res = { coal = 2 iron = 7 } }
+fleet_carrier_1925 = { name = "Fleet Carriers" cat = ship weight = heavy roles = { carrier } tech = fleet_carriers slots = { aa engine armour special }
+    stats = { capacity = 50 hp = 40 aa = 0.6 speed = 30 range = 9000 reliability = 0.82 cost = 180 } res = { iron = 8 oil = 2 } }
+heavy_cruiser_1928 = { name = "Treaty Cruisers" cat = ship weight = medium roles = { cruiser } tech = treaty_cruisers slots = { battery secondary armour torpedo engine aa special }
+    stats = { naval = 2.2 torpedo = 0.4 hp = 22 armor = 20 aa = 0.3 speed = 32 range = 10000 reliability = 0.84 cost = 80 } res = { iron = 6 oil = 2 } }
+destroyer_1936 = { name = "Fleet Destroyers" cat = ship weight = light roles = { destroyer } tech = modern_destroyers slots = { battery torpedo engine aa special }
+    stats = { naval = 0.7 torpedo = 1.6 sub_attack = 0.6 aa = 0.3 hp = 6 speed = 36 range = 8000 reliability = 0.85 cost = 26 } res = { iron = 2 oil = 1 } }
+fast_battleship_1936 = { name = "Fast Battleships" cat = ship weight = heavy roles = { capital } tech = fast_battleships slots = { battery secondary armour engine aa special }
+    stats = { naval = 5.4 hp = 60 armor = 45 aa = 0.8 speed = 30 range = 12000 reliability = 0.85 cost = 260 } res = { iron = 12 oil = 3 } }
+submarine_1940 = { name = "Ocean-Going Submarines" cat = ship weight = light roles = { submarine } tech = improved_submarines slots = { torpedo engine special }
+    stats = { torpedo = 2.6 stealth = 40 hp = 4 speed = 17 range = 9000 reliability = 0.78 cost = 20 } res = { iron = 2 oil = 0.5 } }
+escort_carrier = { name = "Escort Carriers" cat = ship weight = light roles = { carrier } tech = escort_carriers slots = { aa engine special }
+    stats = { capacity = 20 sub_attack = 0.8 hp = 15 speed = 18 range = 9000 reliability = 0.8 cost = 60 } res = { iron = 3 oil = 1 } }
+frigate_1955 = { name = "Missile Frigates" cat = ship weight = light roles = { frigate } tech = frigates slots = { battery torpedo engine aa special }
+    stats = { naval = 0.6 torpedo = 0.4 sub_attack = 1.6 aa = 1.0 hp = 6 speed = 30 range = 9000 reliability = 0.88 cost = 30 } res = { iron = 2 oil = 1 } }
+missile_cruiser_1960 = { name = "Missile Cruisers" cat = ship weight = medium roles = { cruiser } tech = naval_missiles slots = { battery armour torpedo engine aa special }
+    stats = { naval = 3.0 aa = 2.5 sub_attack = 0.6 hp = 18 speed = 32 range = 12000 reliability = 0.88 cost = 90 } res = { iron = 5 oil = 2 } }
+supercarrier_1958 = { name = "Supercarriers" cat = ship weight = heavy roles = { carrier } tech = supercarriers slots = { aa engine armour special }
+    stats = { capacity = 80 hp = 60 aa = 1 speed = 32 range = 15000 reliability = 0.88 cost = 300 } res = { iron = 12 oil = 4 } }
+nuclear_sub_1958 = { name = "Nuclear Submarines" cat = ship weight = medium roles = { submarine } tech = nuclear_submarines slots = { torpedo engine special }
+    stats = { torpedo = 4 stealth = 60 hp = 8 speed = 25 range = 50000 reliability = 0.85 cost = 60 } res = { iron = 4 } }
+nuclear_carrier_1968 = { name = "Nuclear Carriers" cat = ship weight = heavy roles = { carrier } tech = nuclear_carriers slots = { aa engine armour special }
+    stats = { capacity = 90 hp = 80 aa = 1.5 speed = 33 range = 99999 reliability = 0.9 cost = 380 } res = { iron = 15 } }
+aegis_destroyer_1983 = { name = "Aegis Destroyers" cat = ship weight = medium roles = { destroyer } tech = aegis slots = { battery torpedo engine aa special }
+    stats = { naval = 2.4 aa = 4 sub_attack = 2 torpedo = 0.8 hp = 12 speed = 32 range = 10000 reliability = 0.9 cost = 80 } res = { iron = 4 oil = 1 } }
+stealth_destroyer_2000 = { name = "Stealth Destroyers" cat = ship weight = medium roles = { destroyer } tech = stealth_ships slots = { battery torpedo engine aa special }
+    stats = { naval = 3 aa = 5 sub_attack = 2.5 torpedo = 1 hp = 15 speed = 40 range = 12500 reliability = 0.9 cost = 100 } res = { iron = 4 oil = 1 } }
+attack_sub_1980 = { name = "Quiet Attack Submarines" cat = ship weight = medium roles = { submarine } tech = quiet_submarines slots = { torpedo engine special }
+    stats = { torpedo = 5.5 naval = 1.5 stealth = 80 hp = 9 speed = 30 range = 50000 reliability = 0.9 cost = 75 } res = { iron = 4 } }
+aip_sub_2003 = { name = "Air-Independent Submarines" cat = ship weight = medium roles = { submarine } tech = aip_submarines slots = { torpedo engine special }
+    stats = { torpedo = 6.32 naval = 1.72 stealth = 92 hp = 10.35 speed = 34.5 range = 57500 reliability = 0.9 cost = 86.25 } res = { iron = 4 } }
+
+guns_6in = { name = "6-inch Guns" cat = ship slot = battery stats = { naval = 0.3 cost = 3 } }
+guns_8in = { name = "8-inch Guns" cat = ship slot = battery tech = treaty_cruisers roles = { cruiser } stats = { naval = 0.8 cost = 8 } }
+guns_12in = { name = "12-inch Guns" cat = ship slot = battery tech = dreadnought_design roles = { capital } stats = { naval = 0.9 cost = 15 } }
+guns_13in = { name = "13.5-inch Guns" cat = ship slot = battery tech = super_dreadnoughts roles = { capital } stats = { naval = 1.3 cost = 20 } }
+guns_15in = { name = "15-inch Guns" cat = ship slot = battery tech = all_or_nothing roles = { capital } stats = { naval = 1.7 cost = 25 } }
+guns_16in = { name = "16-inch Guns" cat = ship slot = battery tech = fast_battleships roles = { capital } stats = { naval = 2.2 cost = 30 } }
+dual_purpose_guns = { name = "Dual-Purpose Guns" cat = ship slot = battery tech = modern_destroyers stats = { naval = 0.3 aa = 0.4 cost = 3 } }
+ship_missiles = { name = "Anti-Ship Missiles" cat = ship slot = battery tech = anti_ship_missiles stats = { naval = 2.5 cost = 20 } }
+secondary_battery = { name = "Secondary Battery" cat = ship slot = secondary stats = { naval = 0.3 aa = 0.05 cost = 4 } }
+dp_secondary = { name = "Dual-Purpose Secondaries" cat = ship slot = secondary tech = modern_destroyers stats = { naval = 0.3 aa = 0.5 cost = 5 } }
+belt_armour = { name = "Belt Armour" cat = ship slot = armour stats = { armor = 5 hp = 4 speed = -1 cost = 8 } }
+all_or_nothing_armour = { name = "All-or-Nothing Scheme" cat = ship slot = armour tech = all_or_nothing stats = { armor = 12 hp = 6 cost = 12 } }
+armoured_deck = { name = "Armoured Flight Deck" cat = ship slot = armour tech = fleet_carriers roles = { carrier } stats = { hp = 10 armor = 8 capacity = -5 cost = 12 } }
+triple_expansion = { name = "Triple-Expansion Engines" cat = ship slot = engine stats = { speed = 0 } }
+steam_turbines = { name = "Steam Turbines" cat = ship slot = engine tech = dreadnought_design stats = { speed = 3 reliability = 0.05 cost = 5 } }
+oil_boilers = { name = "Oil-Fired Boilers" cat = ship slot = engine tech = oil_fired_boilers stats = { speed = 2 range = 2000 cost = 3 } res = { oil = 0.5 } }
+geared_turbines = { name = "Geared Turbines" cat = ship slot = engine tech = modern_destroyers stats = { speed = 3 range = 2000 cost = 6 } }
+nuclear_reactor = { name = "Nuclear Reactor" cat = ship slot = engine tech = nuclear_power stats = { range = 50000 speed = 3 cost = 40 } }
+marine_gas_turbine = { name = "Marine Gas Turbines" cat = ship slot = engine tech = gas_turbines stats = { speed = 3 reliability = 0.05 cost = 8 } }
+torpedo_tubes = { name = "Torpedo Tubes" cat = ship slot = torpedo stats = { torpedo = 0.5 cost = 2 } }
+improved_torpedoes = { name = "Improved Torpedoes" cat = ship slot = torpedo tech = submarines stats = { torpedo = 0.8 cost = 3 } }
+homing_torpedoes = { name = "Homing Torpedoes" cat = ship slot = torpedo tech = snorkel stats = { torpedo = 1.4 sub_attack = 0.4 cost = 6 } }
+light_aa = { name = "Anti-Aircraft Guns" cat = ship slot = aa tech = anti_aircraft stats = { aa = 0.4 cost = 3 } }
+bofors_guns = { name = "Bofors and Oerlikons" cat = ship slot = aa tech = heavy_flak stats = { aa = 0.9 cost = 5 } }
+ship_sam = { name = "SAM Launchers" cat = ship slot = aa tech = naval_missiles stats = { aa = 2.5 cost = 15 } }
+ciws = { name = "Close-In Weapon System" cat = ship slot = aa tech = aegis stats = { aa = 2 cost = 10 } }
+hydrophone_set = { name = "Hydrophones" cat = ship slot = special tech = hydrophones stats = { sub_attack = 0.5 cost = 2 } }
+sonar_set = { name = "Sonar" cat = ship slot = special tech = sonar stats = { sub_attack = 1 cost = 4 } }
+ship_radar = { name = "Radar" cat = ship slot = special tech = naval_radar stats = { naval = 0.3 aa = 0.4 cost = 6 } }
+fire_control_tables = { name = "Fire-Control Tables" cat = ship slot = special tech = super_dreadnoughts stats = { naval = 0.3 cost = 5 } }
+catapult_plane = { name = "Catapult Floatplane" cat = ship slot = special tech = naval_aviation stats = { naval = 0.1 cost = 3 } }
+helicopter_deck = { name = "Helicopter Deck" cat = ship slot = special tech = helicopters stats = { sub_attack = 1 cost = 6 } }
+snorkel_mast = { name = "Snorkel" cat = ship slot = special tech = snorkel roles = { submarine } stats = { stealth = 15 cost = 2 } }
+anechoic_tiles = { name = "Anechoic Tiles" cat = ship slot = special tech = quiet_submarines roles = { submarine } stats = { stealth = 20 cost = 4 } }

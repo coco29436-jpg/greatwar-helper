@@ -1,0 +1,42 @@
+# Towed guns: field guns, howitzers, anti-tank, anti-aircraft and rocket artillery. Format: equipment/small_arms.txt.
+field_gun_1890 = { name = "Field Guns" cat = artillery roles = { field } year = 1890 slots = { barrel carriage fire_control }
+    stats = { soft = 0.9 hard = 0.12 defense = 0.25 breakthrough = 0.05 pierce = 5 reliability = 0.85 cost = 2.6 } res = { iron = 1 } }
+qf_field_gun = { name = "Quick-Firing Field Guns" cat = artillery roles = { field } tech = quick_firing_artillery slots = { barrel carriage fire_control }
+    stats = { soft = 1.1 hard = 0.15 defense = 0.3 breakthrough = 0.08 pierce = 6 reliability = 0.88 cost = 3 } res = { iron = 1 } }
+heavy_howitzer = { name = "Heavy Howitzers" cat = artillery roles = { howitzer } tech = heavy_howitzers slots = { barrel carriage fire_control }
+    stats = { soft = 1.7 hard = 0.3 defense = 0.2 pierce = 12 reliability = 0.85 cost = 5 } res = { iron = 2 } }
+aa_gun_1915 = { name = "Anti-Aircraft Guns" cat = artillery roles = { aa } tech = anti_aircraft slots = { barrel carriage fire_control }
+    stats = { air = 1.0 soft = 0.1 hard = 0.1 defense = 0.2 pierce = 15 reliability = 0.85 cost = 3 } res = { iron = 1 } }
+at_gun_1930 = { name = "Anti-Tank Guns" cat = artillery roles = { at } tech = at_guns slots = { barrel carriage fire_control }
+    stats = { soft = 0.2 hard = 1.0 defense = 0.5 pierce = 45 reliability = 0.9 cost = 2.8 } res = { iron = 1 } }
+modern_field_gun = { name = "Modern Field Guns" cat = artillery roles = { field } tech = modern_howitzers slots = { barrel carriage fire_control }
+    stats = { soft = 1.6 hard = 0.2 defense = 0.4 breakthrough = 0.1 pierce = 10 reliability = 0.9 cost = 3.6 } res = { iron = 1.2 } }
+modern_howitzer = { name = "Modern Howitzers" cat = artillery roles = { howitzer } tech = modern_howitzers slots = { barrel carriage fire_control }
+    stats = { soft = 2.2 hard = 0.35 defense = 0.25 pierce = 14 reliability = 0.88 cost = 5 } res = { iron = 2 } }
+heavy_flak_gun = { name = "Heavy Flak" cat = artillery roles = { aa } tech = heavy_flak slots = { barrel carriage fire_control }
+    stats = { air = 1.8 hard = 0.3 defense = 0.3 pierce = 60 reliability = 0.88 cost = 4 } res = { iron = 1.5 } }
+rocket_launcher = { name = "Rocket Launchers" cat = artillery roles = { rocket } tech = rocket_artillery slots = { carriage fire_control }
+    stats = { soft = 2.4 defense = 0.1 breakthrough = 0.1 reliability = 0.85 cost = 3.5 } res = { iron = 1 } }
+heavy_at_gun = { name = "Heavy Anti-Tank Guns" cat = artillery roles = { at } tech = heavy_at_guns slots = { barrel carriage fire_control }
+    stats = { soft = 0.3 hard = 1.8 defense = 0.6 pierce = 130 reliability = 0.9 cost = 3.8 } res = { iron = 1.5 } }
+postwar_howitzer = { name = "Post-War Howitzers" cat = artillery roles = { howitzer } tech = radar_fire_control slots = { barrel carriage fire_control }
+    stats = { soft = 2.8 hard = 0.45 defense = 0.3 pierce = 18 reliability = 0.9 cost = 5.5 } res = { iron = 2 } }
+sam_battery = { name = "SAM Batteries" cat = artillery roles = { aa } tech = sam_systems slots = { carriage fire_control }
+    stats = { air = 3.5 defense = 0.2 reliability = 0.8 cost = 7 } res = { iron = 1 oil = 0.5 } }
+tactical_missile = { name = "Tactical Missiles" cat = artillery roles = { rocket } tech = tactical_missiles slots = { carriage fire_control }
+    stats = { soft = 3.5 hard = 0.8 reliability = 0.8 cost = 9 } res = { iron = 1 oil = 1 } }
+computer_howitzer = { name = "Computer-Aimed Howitzers" cat = artillery roles = { howitzer } tech = computer_fire_control slots = { barrel carriage fire_control }
+    stats = { soft = 3.4 hard = 0.5 defense = 0.35 pierce = 22 reliability = 0.92 cost = 6 } res = { iron = 2 } }
+mlrs_launcher = { name = "MLRS Launchers" cat = artillery roles = { rocket } tech = mlrs slots = { carriage fire_control }
+    stats = { soft = 4.5 hard = 0.6 reliability = 0.9 cost = 8 } res = { iron = 1.5 oil = 0.5 } }
+
+long_barrels = { name = "Long Barrels" cat = artillery slot = barrel tech = sound_ranging stats = { soft = 0.1 pierce = 3 cost = 0.3 } }
+heavy_shells = { name = "Heavy Shells" cat = artillery slot = barrel tech = creeping_barrage stats = { soft = 0.2 cost = 0.3 } }
+apds_rounds = { name = "Sabot Rounds" cat = artillery slot = barrel tech = high_velocity_guns roles = { at } stats = { hard = 0.3 pierce = 40 cost = 0.4 } }
+proximity_fuzes = { name = "Proximity Fuzes" cat = artillery slot = barrel tech = heavy_flak roles = { aa } stats = { air = 0.4 cost = 0.3 } }
+horse_teams = { name = "Horse Teams" cat = artillery slot = carriage stats = { speed = 4 } }
+motor_tow = { name = "Lorry Tow" cat = artillery slot = carriage tech = artillery_tractors stats = { speed = 9 cost = 0.4 } res = { oil = 0.1 } }
+spotters = { name = "Forward Observers" cat = artillery slot = fire_control tech = balloons stats = { soft = 0.08 } }
+sound_rangers = { name = "Sound Ranging" cat = artillery slot = fire_control tech = sound_ranging stats = { soft = 0.12 defense = 0.05 } }
+radar_fc = { name = "Fire-Control Radar" cat = artillery slot = fire_control tech = radar_fire_control stats = { soft = 0.25 air = 0.2 cost = 0.3 } }
+computer_fc = { name = "Fire-Control Computer" cat = artillery slot = fire_control tech = computer_fire_control stats = { soft = 0.4 hard = 0.1 air = 0.3 cost = 0.5 } }

@@ -1,0 +1,92 @@
+# Armoured vehicles: tanks (and on the same hulls tank destroyers, self-propelled guns and anti-air), armoured cars,
+# half-tracks, personnel carriers and fighting vehicles. Format: equipment/small_arms.txt. A design's role changes
+# its values: a tank destroyer gives up soft attack for hard attack and piercing, a self-propelled gun the reverse.
+armoured_car_1911 = { name = "Armoured Cars" cat = vehicle weight = light roles = { armoured_car } tech = armoured_cars slots = { gun engine armour special }
+    stats = { soft = 0.5 hard = 0.05 defense = 0.35 breakthrough = 0.5 armor = 6 pierce = 6 hardness = 0.7 speed = 30 reliability = 0.7 recon = 0.3 cost = 5 } res = { iron = 1.5 oil = 0.5 } }
+landship = { name = "Landships" cat = vehicle weight = heavy roles = { tank spg } tech = landships slots = { gun engine armour suspension }
+    stats = { soft = 1.3 hard = 0.4 defense = 0.5 breakthrough = 2.4 armor = 12 pierce = 15 hardness = 0.9 speed = 6 reliability = 0.5 cost = 14 } res = { iron = 4 oil = 2 } }
+light_tank_1918 = { name = "Light Tanks (1918)" cat = vehicle weight = light roles = { tank } tech = medium_tanks slots = { gun turret engine armour suspension }
+    stats = { soft = 0.9 hard = 0.25 defense = 0.4 breakthrough = 1.8 armor = 14 pierce = 10 hardness = 0.85 speed = 8 reliability = 0.65 cost = 8 } res = { iron = 2 oil = 1 } }
+medium_tank_1918 = { name = "Medium Tanks (1918)" cat = vehicle weight = medium roles = { tank spg } tech = medium_tanks slots = { gun turret engine armour suspension }
+    stats = { soft = 1.2 hard = 0.45 defense = 0.55 breakthrough = 2.4 armor = 16 pierce = 15 hardness = 0.88 speed = 10 reliability = 0.6 cost = 12 } res = { iron = 3 oil = 1.5 } }
+light_tank_1930 = { name = "Light Tanks (1930)" cat = vehicle weight = light roles = { tank td spg spaag } tech = interwar_tanks slots = { gun turret engine armour suspension special }
+    stats = { soft = 1.0 hard = 0.35 defense = 0.5 breakthrough = 2.0 armor = 18 pierce = 15 hardness = 0.85 speed = 20 reliability = 0.75 cost = 7 } res = { iron = 2 oil = 1 } }
+medium_tank_1930 = { name = "Medium Tanks (1930)" cat = vehicle weight = medium roles = { tank td spg spaag } tech = interwar_tanks slots = { gun turret engine armour suspension special }
+    stats = { soft = 1.4 hard = 0.6 defense = 0.7 breakthrough = 2.8 armor = 25 pierce = 20 hardness = 0.9 speed = 16 reliability = 0.7 cost = 11 } res = { iron = 3 oil = 1.5 } }
+armoured_car_1936 = { name = "Fast Armoured Cars" cat = vehicle weight = light roles = { armoured_car } tech = tank_radios slots = { gun engine armour special }
+    stats = { soft = 0.7 hard = 0.15 defense = 0.5 breakthrough = 0.8 armor = 12 pierce = 10 hardness = 0.7 speed = 60 reliability = 0.8 recon = 0.5 cost = 4 } res = { iron = 1.5 oil = 0.5 } }
+medium_tank_1936 = { name = "Medium Tanks (1936)" cat = vehicle weight = medium roles = { tank td spg spaag } tech = medium_tank_development slots = { gun turret engine armour suspension special }
+    stats = { soft = 1.7 hard = 0.9 defense = 0.9 breakthrough = 3.4 armor = 40 pierce = 25 hardness = 0.9 speed = 18 reliability = 0.75 cost = 13 } res = { iron = 3 oil = 1.5 } }
+heavy_tank_1936 = { name = "Heavy Tanks (1936)" cat = vehicle weight = heavy roles = { tank td spg } tech = heavy_tanks slots = { gun turret engine armour suspension special }
+    stats = { soft = 1.9 hard = 1.0 defense = 1.2 breakthrough = 4.0 armor = 60 pierce = 30 hardness = 0.95 speed = 10 reliability = 0.65 cost = 20 } res = { iron = 6 oil = 3 } }
+halftrack_1938 = { name = "Half-Tracks" cat = vehicle weight = light roles = { apc } tech = half_tracks slots = { gun engine armour }
+    stats = { soft = 0.4 hard = 0.05 defense = 0.5 breakthrough = 0.5 armor = 8 hardness = 0.6 speed = 30 reliability = 0.8 cost = 3 } res = { iron = 1 oil = 0.5 } }
+medium_tank_1940 = { name = "Medium Tanks (1940)" cat = vehicle weight = medium roles = { tank td spg spaag } tech = improved_tanks slots = { gun turret engine armour suspension special }
+    stats = { soft = 2.0 hard = 1.3 defense = 1.1 breakthrough = 4.0 armor = 55 pierce = 30 hardness = 0.92 speed = 20 reliability = 0.78 cost = 14 } res = { iron = 3.5 oil = 1.5 } }
+medium_tank_1943 = { name = "Medium Tanks (1943)" cat = vehicle weight = medium roles = { tank td spg spaag } tech = advanced_tanks slots = { gun turret engine armour suspension special }
+    stats = { soft = 2.4 hard = 1.8 defense = 1.3 breakthrough = 4.8 armor = 80 pierce = 40 hardness = 0.93 speed = 22 reliability = 0.8 cost = 16 } res = { iron = 4 oil = 2 } }
+heavy_tank_1943 = { name = "Heavy Tanks (1943)" cat = vehicle weight = heavy roles = { tank td spg } tech = heavy_tanks_2 slots = { gun turret engine armour suspension special }
+    stats = { soft = 2.6 hard = 2.2 defense = 1.8 breakthrough = 5.5 armor = 120 pierce = 50 hardness = 0.95 speed = 13 reliability = 0.65 cost = 26 } res = { iron = 7 oil = 3 } }
+superheavy_tank = { name = "Super-Heavy Tanks" cat = vehicle weight = superheavy roles = { tank td spg } tech = superheavy_tanks slots = { gun turret engine armour suspension special }
+    stats = { soft = 3.0 hard = 2.6 defense = 2.5 breakthrough = 6 armor = 200 pierce = 60 hardness = 0.97 speed = 6 reliability = 0.5 cost = 45 } res = { iron = 12 oil = 6 } }
+apc_1952 = { name = "Tracked Personnel Carriers" cat = vehicle weight = light roles = { apc } tech = apcs slots = { gun engine armour special }
+    stats = { soft = 0.5 hard = 0.1 defense = 0.7 breakthrough = 0.7 armor = 20 hardness = 0.7 speed = 40 reliability = 0.85 cost = 4 } res = { iron = 1.5 oil = 0.5 } }
+mbt_1959 = { name = "Main Battle Tanks (1959)" cat = vehicle weight = mbt roles = { tank td spaag } tech = mbt_1 slots = { gun turret engine armour suspension special }
+    stats = { soft = 3.0 hard = 3.0 defense = 2.0 breakthrough = 6.5 armor = 140 pierce = 60 hardness = 0.95 speed = 30 reliability = 0.82 cost = 22 } res = { iron = 5 oil = 2 } }
+ifv_1967 = { name = "Infantry Fighting Vehicles" cat = vehicle weight = medium roles = { ifv } tech = ifvs slots = { gun engine armour special }
+    stats = { soft = 1.0 hard = 0.6 defense = 1.0 breakthrough = 1.4 armor = 30 pierce = 30 hardness = 0.75 speed = 45 reliability = 0.85 cost = 7 } res = { iron = 2 oil = 1 } }
+mbt_1972 = { name = "Main Battle Tanks (1972)" cat = vehicle weight = mbt roles = { tank td spaag } tech = mbt_2 slots = { gun turret engine armour suspension special }
+    stats = { soft = 3.6 hard = 3.8 defense = 2.4 breakthrough = 7.5 armor = 200 pierce = 80 hardness = 0.96 speed = 35 reliability = 0.85 cost = 26 } res = { iron = 5 oil = 2 } }
+mbt_1984 = { name = "Main Battle Tanks (1984)" cat = vehicle weight = mbt roles = { tank td spaag } tech = mbt_3 slots = { gun turret engine armour suspension special }
+    stats = { soft = 4.2 hard = 4.6 defense = 2.9 breakthrough = 8.5 armor = 300 pierce = 100 hardness = 0.97 speed = 40 reliability = 0.88 cost = 32 } res = { iron = 6 oil = 2.5 } }
+mbt_2015 = { name = "Digital Main Battle Tanks (2015)" cat = vehicle weight = mbt roles = { tank td spaag } tech = mbt_4 slots = { gun turret engine armour suspension special }
+    stats = { soft = 5.25 hard = 5.75 defense = 3.62 breakthrough = 10.62 armor = 375 pierce = 125 hardness = 1.21 speed = 50 reliability = 0.88 cost = 40 } res = { iron = 6 oil = 2.5 } }
+
+machine_gun_mount = { name = "Machine Guns" cat = vehicle slot = gun stats = { soft = 0.3 hard = 0.05 pierce = 5 cost = 0.3 } }
+gun_37mm = { name = "37 mm Gun" cat = vehicle slot = gun tech = landships stats = { soft = 0.4 hard = 0.35 pierce = 25 cost = 0.8 } }
+gun_6pdr = { name = "6-Pounder Gun" cat = vehicle slot = gun tech = landships stats = { soft = 0.6 hard = 0.3 pierce = 22 cost = 1 } }
+autocannon_20mm = { name = "20 mm Autocannon" cat = vehicle slot = gun tech = improved_tanks stats = { soft = 0.6 hard = 0.3 pierce = 30 cost = 0.6 } }
+gun_75mm_short = { name = "Short 75 mm Gun" cat = vehicle slot = gun tech = interwar_tanks stats = { soft = 0.9 hard = 0.4 pierce = 35 cost = 1.5 } }
+gun_75mm_long = { name = "Long 75 mm Gun" cat = vehicle slot = gun tech = high_velocity_guns stats = { soft = 0.8 hard = 1.2 pierce = 100 cost = 2 } }
+gun_88mm = { name = "88 mm Gun" cat = vehicle slot = gun tech = heavy_tanks_2 stats = { soft = 1.0 hard = 1.8 pierce = 150 cost = 3 } }
+gun_105mm_rifled = { name = "105 mm Rifled Gun" cat = vehicle slot = gun tech = mbt_1 stats = { soft = 1.4 hard = 2.4 pierce = 260 cost = 3 } }
+gun_120mm_smoothbore = { name = "120 mm Smoothbore" cat = vehicle slot = gun tech = smoothbore_guns stats = { soft = 1.6 hard = 3.2 pierce = 480 cost = 4 } }
+howitzer_105mm_sp = { name = "105 mm Howitzer" cat = vehicle slot = gun tech = medium_tank_development roles = { spg } stats = { soft = 2.0 hard = 0.3 pierce = 20 cost = 2 } }
+howitzer_155mm_sp = { name = "155 mm Howitzer" cat = vehicle slot = gun tech = modern_howitzers roles = { spg } stats = { soft = 3.0 hard = 0.4 pierce = 25 cost = 3 } }
+aa_autocannons = { name = "Twin Anti-Aircraft Cannon" cat = vehicle slot = gun tech = anti_aircraft roles = { spaag } stats = { air = 1.5 soft = 0.3 cost = 1 } }
+sam_launcher_vehicle = { name = "SAM Launcher" cat = vehicle slot = gun tech = mobile_sam roles = { spaag } stats = { air = 4 cost = 3 } }
+atgm_launcher = { name = "Missile Launcher" cat = vehicle slot = gun tech = atgm roles = { td ifv } stats = { hard = 2.6 pierce = 600 cost = 2.5 } }
+
+casemate = { name = "Fixed Casemate" cat = vehicle slot = turret stats = { soft = -0.1 cost = -0.5 } }
+one_man_turret = { name = "One-Man Turret" cat = vehicle slot = turret tech = medium_tanks stats = { breakthrough = 0.2 cost = 0.3 } }
+two_man_turret = { name = "Two-Man Turret" cat = vehicle slot = turret tech = interwar_tanks stats = { breakthrough = 0.4 soft = 0.1 cost = 0.5 } }
+three_man_turret = { name = "Three-Man Turret" cat = vehicle slot = turret tech = medium_tank_development stats = { breakthrough = 0.7 soft = 0.2 hard = 0.2 cost = 0.8 } }
+stabilised_turret = { name = "Stabilised Turret" cat = vehicle slot = turret tech = gun_stabiliser stats = { breakthrough = 0.8 cost = 1 } mult = { soft = 1.15 hard = 1.15 } }
+laser_turret = { name = "Laser Rangefinder Turret" cat = vehicle slot = turret tech = mbt_2 stats = { breakthrough = 0.9 cost = 1.5 } mult = { soft = 1.25 hard = 1.25 } }
+
+early_petrol_engine = { name = "Early Petrol Engine" cat = vehicle slot = engine tech = landships stats = { speed = 0 } }
+petrol_engine = { name = "Petrol Engine" cat = vehicle slot = engine tech = interwar_tanks stats = { speed = 6 reliability = 0.05 cost = 0.5 } res = { oil = 0.3 } }
+tank_diesel = { name = "Diesel Engine" cat = vehicle slot = engine tech = diesel_engines stats = { speed = 6 reliability = 0.1 cost = 0.6 } res = { oil = 0.2 } }
+multifuel_engine = { name = "Multi-Fuel Engine" cat = vehicle slot = engine tech = mbt_1 stats = { speed = 10 reliability = 0.1 cost = 0.8 } res = { oil = 0.2 } }
+gas_turbine_engine = { name = "Gas Turbine" cat = vehicle slot = engine tech = gas_turbines stats = { speed = 16 cost = 1.5 } res = { oil = 0.6 } }
+
+riveted_armour = { name = "Riveted Plate" cat = vehicle slot = armour tech = landships stats = { armor = 2 } }
+welded_plate = { name = "Welded Armour" cat = vehicle slot = armour tech = welded_armour stats = { armor = 10 reliability = 0.03 cost = 0.5 } }
+sloped_plate = { name = "Sloped Armour" cat = vehicle slot = armour tech = sloped_armour stats = { armor = 25 cost = 0.8 } }
+heavy_plate = { name = "Heavy Armour Plate" cat = vehicle slot = armour tech = heavy_tanks stats = { armor = 30 speed = -3 cost = 1.2 } }
+composite_plate = { name = "Composite Armour" cat = vehicle slot = armour tech = composite_armour stats = { armor = 120 cost = 2.5 } }
+reactive_bricks = { name = "Reactive Armour" cat = vehicle slot = armour tech = reactive_armour stats = { armor = 60 defense = 0.3 cost = 1.5 } }
+
+caterpillar = { name = "Caterpillar Tracks" cat = vehicle slot = suspension tech = landships stats = { speed = 0 } }
+leaf_springs = { name = "Leaf Springs" cat = vehicle slot = suspension tech = interwar_tanks stats = { speed = 2 reliability = 0.03 } }
+christie_suspension = { name = "Christie Suspension" cat = vehicle slot = suspension tech = interwar_tanks stats = { speed = 5 reliability = -0.03 cost = 0.3 } }
+torsion_bars = { name = "Torsion Bars" cat = vehicle slot = suspension tech = improved_tanks stats = { speed = 3 reliability = 0.06 cost = 0.4 } }
+hydropneumatic = { name = "Hydropneumatic Suspension" cat = vehicle slot = suspension tech = mbt_2 stats = { speed = 4 reliability = 0.05 defense = 0.2 cost = 0.6 } }
+
+radio_set = { name = "Radio" cat = vehicle slot = special tech = tank_radios stats = { breakthrough = 0.3 defense = 0.1 cost = 0.2 } }
+smoke_launchers = { name = "Smoke Launchers" cat = vehicle slot = special tech = improved_tanks stats = { defense = 0.15 cost = 0.1 } }
+nbc_protection = { name = "NBC Protection" cat = vehicle slot = special tech = mbt_1 stats = { defense = 0.2 cost = 0.3 } }
+thermal_sight = { name = "Thermal Sight" cat = vehicle slot = special tech = thermal_sights stats = { soft = 0.2 hard = 0.2 defense = 0.2 cost = 0.5 } }
+laser_rangefinder = { name = "Laser Rangefinder" cat = vehicle slot = special tech = lasers stats = { soft = 0.2 hard = 0.4 cost = 0.6 } }
+active_protection_kit = { name = "Active Protection" cat = vehicle slot = special tech = active_protection stats = { defense = 0.5 cost = 0.8 } }
+hybrid_engine = { name = "Hybrid Drive" cat = vehicle slot = engine tech = hybrid_drives stats = { speed = 8 reliability = 0.03 cost = 0.5 } }

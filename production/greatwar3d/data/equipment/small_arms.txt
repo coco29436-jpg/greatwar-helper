@@ -1,0 +1,40 @@
+# Infantry weapons. An entry with `slots` is a chassis (the base weapon a design is built on); one with `slot` is
+# a module that fits that slot. Stats add up; `mult` multiplies; `res` is coal, iron and oil per piece built.
+# Stats are per battalion with its full kit: soft and hard attack, defense, breakthrough, armor, pierce, hardness,
+# speed (km/h), reliability, cost (production per piece), range, agility, ground, bombing, naval, torpedo,
+# sub_attack, aa, hp, supply, farm, recon, stealth, capacity.
+# `tech` must be researched; `roles` lists what designs on a chassis can be (modules: what they are for).
+
+rifle_1890 = { name = "Repeating Rifles" cat = small_arms roles = { infantry } year = 1890 slots = { support antitank gear }
+    stats = { soft = 0.65 defense = 1.0 breakthrough = 0.15 pierce = 1 reliability = 0.85 cost = 0.45 } res = { iron = 0.3 } }
+rifle_bolt = { name = "Bolt-Action Rifles" cat = small_arms roles = { infantry } tech = bolt_rifles slots = { support antitank gear }
+    stats = { soft = 0.8 defense = 1.2 breakthrough = 0.2 pierce = 2 reliability = 0.9 cost = 0.5 } res = { iron = 0.3 } }
+rifle_semi = { name = "Semi-Automatic Rifles" cat = small_arms roles = { infantry } tech = semi_automatic_rifles slots = { support antitank gear }
+    stats = { soft = 1.0 defense = 1.45 breakthrough = 0.3 pierce = 3 reliability = 0.88 cost = 0.6 } res = { iron = 0.35 } }
+rifle_assault = { name = "Assault Rifles" cat = small_arms roles = { infantry } tech = assault_rifles slots = { support antitank gear }
+    stats = { soft = 1.25 defense = 1.65 breakthrough = 0.42 pierce = 4 reliability = 0.9 cost = 0.65 } res = { iron = 0.35 } }
+rifle_small_calibre = { name = "Small-Calibre Rifles" cat = small_arms roles = { infantry } tech = small_calibre_rifles slots = { support antitank gear }
+    stats = { soft = 1.45 defense = 1.85 breakthrough = 0.5 pierce = 5 reliability = 0.92 cost = 0.7 } res = { iron = 0.3 } }
+rifle_modern = { name = "Modern Infantry Kit" cat = small_arms roles = { infantry } tech = infantry_electronics slots = { support antitank gear }
+    stats = { soft = 1.65 defense = 2.1 breakthrough = 0.6 pierce = 6 reliability = 0.94 cost = 0.8 } res = { iron = 0.3 oil = 0.05 } }
+
+mg_crews = { name = "Machine-Gun Crews" cat = small_arms slot = support stats = { soft = 0.1 defense = 0.15 cost = 0.03 } }
+mg_companies = { name = "Machine-Gun Companies" cat = small_arms slot = support tech = machine_guns stats = { soft = 0.2 defense = 0.3 cost = 0.05 } }
+light_machine_guns = { name = "Light Machine Guns" cat = small_arms slot = support tech = light_mg stats = { soft = 0.3 defense = 0.35 breakthrough = 0.05 cost = 0.07 } }
+submachine_guns = { name = "Submachine Guns" cat = small_arms slot = support tech = smg stats = { soft = 0.25 defense = 0.1 breakthrough = 0.14 cost = 0.05 } }
+light_mortars = { name = "Light Mortars" cat = small_arms slot = support tech = trench_mortars stats = { soft = 0.32 defense = 0.12 cost = 0.06 } }
+gpmgs = { name = "General-Purpose Machine Guns" cat = small_arms slot = support tech = gpmg stats = { soft = 0.45 defense = 0.45 breakthrough = 0.08 cost = 0.08 } }
+squad_automatic = { name = "Squad Automatic Weapons" cat = small_arms slot = support tech = small_calibre_rifles stats = { soft = 0.55 defense = 0.5 breakthrough = 0.1 cost = 0.09 } }
+
+rifle_grenade = { name = "Rifle Grenades" cat = small_arms slot = antitank tech = rifle_grenades stats = { soft = 0.08 hard = 0.05 pierce = 4 cost = 0.02 } }
+at_rifles = { name = "Anti-Tank Rifles" cat = small_arms slot = antitank tech = anti_tank_rifles stats = { hard = 0.15 pierce = 18 cost = 0.04 } }
+bazookas = { name = "Bazookas" cat = small_arms slot = antitank tech = shaped_charges stats = { hard = 0.35 pierce = 90 cost = 0.06 } }
+rpgs = { name = "RPGs" cat = small_arms slot = antitank tech = rpg stats = { soft = 0.05 hard = 0.5 pierce = 250 cost = 0.06 } }
+atgm_teams = { name = "Anti-Tank Missile Teams" cat = small_arms slot = antitank tech = atgm stats = { hard = 0.8 pierce = 500 cost = 0.1 } }
+
+steel_helmet = { name = "Steel Helmets" cat = small_arms slot = gear tech = steel_helmets stats = { defense = 0.1 cost = 0.01 } }
+field_telephones = { name = "Field Telephones and Radios" cat = small_arms slot = gear tech = signal_companies stats = { breakthrough = 0.05 defense = 0.08 cost = 0.02 } }
+manpad_teams = { name = "Shoulder-Launched SAMs" cat = small_arms slot = gear tech = manpads stats = { air = 0.4 cost = 0.08 } }
+body_armour_vests = { name = "Body Armour" cat = small_arms slot = gear tech = body_armour stats = { defense = 0.25 cost = 0.05 } }
+night_vision = { name = "Night-Vision Goggles" cat = small_arms slot = gear tech = infantry_electronics stats = { soft = 0.1 defense = 0.15 cost = 0.06 } }
+networked_kit = { name = "Networked Soldier Kit" cat = small_arms slot = gear tech = soldier_networks stats = { soft = 0.2 defense = 0.2 cost = 0.08 } }
